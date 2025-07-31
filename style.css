@@ -11,3 +11,47 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.mensagem {
+  position: absolute; 
+  top: 50px; 
+  left: 20px; 
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.emoji-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; 
+}
+
+.emoji {
+  font-size: 3rem;
+  position: absolute;
+  animation: float 10s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-200px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
