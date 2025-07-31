@@ -24,12 +24,21 @@
     background: linear-gradient(180deg, #4b0082, #000);
     color: #fff;
     text-shadow: 2px 2px #000;
+    position: relative; /* Adicionando posição relativa */
   }
 
   h1 {
     margin: 0;
-    font-size: 4.5em; /* Aumentei ainda mais o tamanho do título principal */
-    font-family: "Carter One", system-ui, sans-serif; /* Aplicando a fonte Carter One */
+    font-size: 4.5em;
+    font-family: "Carter One", system-ui, sans-serif;
+  }
+
+  .character-image {
+    position: absolute;
+    top: 20px; /* Ajuste o valor para posicionar a imagem no lugar desejado */
+    right: 20px; /* Ajuste o valor para posicionar a imagem */
+    width: 150px; /* Ajuste o tamanho da imagem */
+    height: auto;
   }
 
   main {
@@ -50,36 +59,12 @@
     padding-bottom: 5px;
     margin-bottom: 10px;
     color: #c77dff;
-    font-family: "Carter One", system-ui, sans-serif; /* Aplicando a fonte Carter One */
-    font-size: 3.5em; /* Aumentei o tamanho dos subtítulos */
+    font-family: "Carter One", system-ui, sans-serif;
+    font-size: 3.5em;
   }
 
   ul {
     padding-left: 20px;
-  }
-
-  form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: rgba(0,0,0,0.6);
-    border: 1px solid #9932cc;
-    border-radius: 5px;
-    color: #eee;
-  }
-
-  form button {
-    background-color: #9932cc;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-
-  form button:hover {
-    background-color: #7a1fa2;
   }
 
   footer {
@@ -94,6 +79,8 @@
   <header>
     <h1>NerdTech Anime</h1>
     <p>Geek, programação e cultura otaku num só lugar 🌙</p>
+    <!-- Adicionando a imagem da personagem -->
+    <img src="caminho-da-sua-imagem.jpg" alt="Personagem" class="character-image">
   </header>
 
   <main>
